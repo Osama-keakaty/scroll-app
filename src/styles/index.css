@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .shadow-custom {
+    --tw-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.05);
+    --tw-shadow-colored: 0 0px 20px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow);
+  }
+
+  .ant-select-dropdown {
+    background-color: var(--color-white) !important
+  }
+
+  .ant-select-item-option:hover {
+    background-color: var(--color-primary-lighter) !important;
+  }
+
+  .ant-select-item-option-selected {
+    background-color: var(--color-primary-light) !important;
+  }
+
+  .ant-select-selector,
+  .ant-select-selector:active {
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .ant-spin.ant-spin-dot {
+    background-color: var(--color-primary-main);
+  }
+}
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --color-primary-*: initial;
+  --color-primary-main: #F5C12D;
+  --color-primary-dark: #F5C12D;
+  --color-primary-light: #F5C12D70;
+  --color-primary-lighter: #F5C12D17;
+  --color-bg-color: #f1f1f1
+}
